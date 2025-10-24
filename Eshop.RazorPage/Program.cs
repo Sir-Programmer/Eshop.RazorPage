@@ -1,6 +1,10 @@
-var builder = WebApplication.CreateBuilder(args);
+using Eshop.RazorPage.Infrastructure;
 
-builder.Services.AddRazorPages();
+var builder = WebApplication.CreateBuilder(args);
+var services = builder.Services;
+
+services.AddRazorPages();
+services.RegisterApiServices(builder.Configuration);
 
 var app = builder.Build();
 
