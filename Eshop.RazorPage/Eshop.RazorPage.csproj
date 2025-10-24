@@ -8,18 +8,6 @@
 
     <ItemGroup>
       <Folder Include="Models\" />
-      <Folder Include="Services\Banners\" />
-      <Folder Include="Services\Categories\" />
-      <Folder Include="Services\Comments\" />
-      <Folder Include="Services\MainPage\" />
-      <Folder Include="Services\Orders\" />
-      <Folder Include="Services\Products\" />
-      <Folder Include="Services\Roles\" />
-      <Folder Include="Services\Sellers\" />
-      <Folder Include="Services\ShippingMethods\" />
-      <Folder Include="Services\Sliders\" />
-      <Folder Include="Services\Transactions\" />
-      <Folder Include="Services\Users\" />
     </ItemGroup>
 
 </Project>
