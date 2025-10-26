@@ -1,18 +1,13 @@
-using Microsoft.AspNetCore.Mvc;
+using Eshop.RazorPage.Models.Auth;
+using Eshop.RazorPage.Services.Auth;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Eshop.RazorPage.Pages;
 
-public class IndexModel : PageModel
+public class IndexModel(IAuthService authService, ILogger<IndexModel> logger) : PageModel
 {
-    private readonly ILogger<IndexModel> _logger;
-
-    public IndexModel(ILogger<IndexModel> logger)
-    {
-        _logger = logger;
-    }
-
     public void OnGet()
     {
+        
     }
 }

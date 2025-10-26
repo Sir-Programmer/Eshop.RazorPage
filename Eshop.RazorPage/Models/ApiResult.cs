@@ -37,7 +37,7 @@ public class ApiResult
 public class ApiResult<TData>
 {
     public bool IsSuccess { get; set; }
-    public required TData Data { get; set; }
+    public TData? Data { get; set; }
     public required MetaData MetaData { get; set; }
 
     private static ApiResult<TData> Create(OperationStatusCode code, TData data, string message, bool isSuccess) => new()
