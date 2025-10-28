@@ -9,4 +9,8 @@ public interface IAuthService
     Task<ApiResult<LoginResponse>?> Login(LoginCommand command);
     Task<ApiResult?> RequestRegistration(RequestRegistrationCommand command);
     Task<ApiResult?> ConfirmRegistration(ConfirmRegistrationCommand command);
+    Task<ApiResult?> RequestPasswordReset(RequestPasswordResetCommand command);
+    Task<ApiResult?> ConfirmPasswordReset(ConfirmPasswordResetCommand command);
+    Task<ApiResult<LoginResponse>?> RefreshToken();
+    Task<ApiResult?> Logout();
 }
